@@ -32,13 +32,13 @@ The assistant checks for them and, when one is missing, names the command and wa
 
 ### Terminal agents
 
-One command for every agent found on the computer (needs Node.js; `-g` installs for the user, without it for the current project only) — **run** from a local copy of this repository into an empty home folder on 2026-11-17 (the file installed was identical, linked for Claude Code); from GitHub **docs**:
+One command for every agent found on the computer (needs Node.js; `-g` installs for the user, without it for the current project only) — **run** (2026-11-17, from this repository on GitHub into an empty home folder; the files installed identical to the repository):
 
 ```sh
 npx skills add geragarazagh/text-to-speech -g
 ```
 
-Claude Code, as a plugin — **run** from a local copy of this repository on 2026-11-17 (Claude Code 2.1.325: the marketplace added, the plugin installed, its `SKILL.md` identical); from GitHub **docs**:
+Claude Code, as a plugin — **run** (2026-11-17, from this repository on GitHub: the marketplace added, the plugin installed, its `SKILL.md` identical to the repository):
 
 ```sh
 claude plugin marketplace add geragarazagh/text-to-speech
