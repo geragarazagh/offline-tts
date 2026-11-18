@@ -1,11 +1,11 @@
 ---
-name: text-to-speech
+name: offline-tts
 description: "Reads a text aloud into an audio file (mp3, m4a or wav) with the computer's own voices, offline: Siri voices on a Mac, Piper or system voices on Linux and Windows, numbers and dates read right. Use when someone wants a text, article, file or chat answer turned into speech to listen to later."
 license: MIT
 compatibility: "Needs an assistant that runs commands on the person's computer (a terminal agent). Best on macOS 13 or newer; Linux through Piper or espeak-ng; Windows through its built-in voices. Chat apps have no voices in their sandbox."
 ---
 
-# Text to speech
+# Offline TTS
 
 Turns a text into an audio file on the person's computer with voices that
 are already there or installed once, offline. Answer in the language of the
@@ -34,7 +34,7 @@ listed the voices (step 2 below), with the default for each:
 
 A reply such as «ok» or «go» takes the defaults. Keep the answers for the
 rest of the conversation and do not ask again. If the agent keeps files,
-offer once to save the answers in `~/.config/text-to-speech.txt` (plain
+offer once to save the answers in `~/.config/offline-tts.txt` (plain
 lines such as `voice: Voice 2`) and read that file before asking next time.
 
 ## Every file
