@@ -1,4 +1,4 @@
-<img src="assets/icon.png" width="128" alt="text-to-speech icon: the sound wave of a spoken phrase">
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-github-dark.png"><img src="assets/icon-github.png" width="128" alt="text-to-speech icon: the sound wave of a spoken phrase"></picture>
 
 # text-to-speech: a skill for AI assistants that reads a text aloud into an audio file
 
