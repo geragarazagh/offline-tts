@@ -1,6 +1,6 @@
 {
   "name": "text-to-speech",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Reads a text aloud into an mp3, m4a or wav with the computer's own voices, offline: Siri voices on a Mac, Piper or system voices on Linux and Windows, numbers and dates read right.",
   "author": {
     "name": "Herman Harazha",
