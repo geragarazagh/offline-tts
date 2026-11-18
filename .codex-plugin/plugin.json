@@ -1,30 +1,33 @@
 {
-  "name": "text-to-speech",
-  "version": "0.1.1",
+  "name": "offline-tts",
+  "version": "0.2.0",
   "description": "Reads a text aloud into an mp3, m4a or wav with the computer's own voices, offline: Siri voices on a Mac, Piper or system voices on Linux and Windows, numbers and dates read right.",
   "author": {
     "name": "Herman Harazha",
     "url": "https://geragaraza.com"
   },
-  "homepage": "https://github.com/geragarazagh/text-to-speech",
+  "homepage": "https://github.com/geragarazagh/offline-tts",
   "license": "MIT",
   "skills": "./skills/",
+  "requires_local_executor": true,
   "interface": {
-    "displayName": "Text to Speech",
+    "displayName": "Offline TTS",
     "shortDescription": "Read a text aloud into a file",
-    "longDescription": "Give the assistant a text or a file and say to read it aloud: it asks once for the voice, the speed and where to save, then makes an mp3, m4a or wav on the computer with the voices already there, offline, and checks the file. On a Mac it uses the Siri voices through the free tts command and reads Russian and Ukrainian numbers and dates in the right case; on Linux Piper or espeak-ng, on Windows the built-in voices, with numbers and signs written as words first. Nothing is installed without the person's yes; nothing is sent anywhere.",
+    "longDescription": "Give the assistant a text or a file and say to read it aloud: it asks once for the voice, the speed and where to save, then makes an mp3, m4a or wav on the computer with the voices already there, offline, and checks the file. On a Mac it uses the Siri voices through the open-source tts command and reads Russian and Ukrainian numbers and dates in the right case; on Linux Piper or espeak-ng, on Windows the built-in voices, with numbers and signs written as words first. Nothing is installed without the person's yes; nothing is sent anywhere.",
     "developerName": "Herman Harazha",
     "category": "Productivity",
     "capabilities": [],
-    "websiteURL": "https://github.com/geragarazagh/text-to-speech",
-    "supportURL": "https://github.com/geragarazagh/text-to-speech/issues",
+    "websiteURL": "https://github.com/geragarazagh/offline-tts",
+    "supportURL": "https://github.com/geragarazagh/offline-tts/issues",
     "privacyPolicyURL": "https://geragaraza.com/skills/privacy/",
-    "logo": "./assets/icon.png",
-    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/icon-chatgpt.png",
+    "composerIcon": "./assets/icon-chatgpt-composer.svg",
     "defaultPrompt": [
       "Read this file aloud into an mp3.",
       "Turn your last answer into audio, 1.5 times faster.",
       "Make an m4a of this chapter with a male voice."
-    ]
+    ],
+    "brandColor": "#0089ea",
+    "brandColorDark": "#0089ea"
   }
 }

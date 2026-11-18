@@ -1,16 +1,17 @@
 {
-  "name": "text-to-speech",
-  "displayName": "Text to Speech",
-  "version": "0.1.1",
+  "name": "offline-tts",
+  "displayName": "Offline TTS",
+  "version": "0.2.0",
   "description": "Reads a text aloud into an mp3, m4a or wav with the computer's own voices, offline: Siri voices on a Mac, Piper or system voices on Linux and Windows, numbers and dates read right.",
   "author": {
     "name": "Herman Harazha",
     "url": "https://geragaraza.com"
   },
-  "homepage": "https://github.com/geragarazagh/text-to-speech",
-  "repository": "https://github.com/geragarazagh/text-to-speech",
+  "homepage": "https://github.com/geragarazagh/offline-tts",
+  "repository": "https://github.com/geragarazagh/offline-tts",
   "license": "MIT",
   "keywords": [
+    "offline-tts",
     "text-to-speech",
     "tts",
     "siri-voices",
@@ -18,6 +19,7 @@
     "audio",
     "agent-skills"
   ],
-  "supportUrl": "https://github.com/geragarazagh/text-to-speech/issues",
-  "privacyPolicyUrl": "https://geragaraza.com/skills/privacy/"
+  "supportUrl": "https://github.com/geragarazagh/offline-tts/issues",
+  "privacyPolicyUrl": "https://geragaraza.com/skills/privacy/",
+  "icon": "./.claude-plugin/icon.png"
 }

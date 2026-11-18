@@ -1,6 +1,6 @@
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-github-dark.png"><img src="assets/icon-github.png" width="128" alt="text-to-speech icon: the sound wave of a spoken phrase"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-github-dark.png"><img src="assets/icon-github.png" width="128" alt="offline-tts icon: the sound wave of a spoken phrase"></picture>
 
-# text-to-speech: a skill for AI assistants that reads a text aloud into an audio file
+# offline-tts: a skill for AI assistants that reads a text aloud into an audio file
 
 A free, open source agent skill. Give the assistant a text, a file or its own answer and say «read this aloud into a file»: it asks once which voice, which speed and where to save, then makes an mp3, m4a or wav on the computer with voices that are already there, offline, and checks the file before saying it is done.
 
@@ -35,31 +35,31 @@ The assistant checks for them and, when one is missing, names the command and wa
 One command for every agent found on the computer (needs Node.js; `-g` installs for the user, without it for the current project only) — **run** (2026-11-17, from this repository on GitHub into an empty home folder; the files installed identical to the repository):
 
 ```sh
-npx skills add geragarazagh/text-to-speech -g
+npx skills add geragarazagh/offline-tts -g
 ```
 
 Claude Code, as a plugin — **run** (2026-11-17, from this repository on GitHub: the marketplace added, the plugin installed, its `SKILL.md` identical to the repository):
 
 ```sh
-claude plugin marketplace add geragarazagh/text-to-speech
-claude plugin install text-to-speech@text-to-speech
+claude plugin marketplace add geragarazagh/offline-tts
+claude plugin install offline-tts@offline-tts
 ```
 
 Gemini CLI, as an extension — **run** (2026-11-18, from this repository's latest release on GitHub, Gemini CLI 0.68.0, into an empty home folder: the extension installed and its skill listed by `gemini skills list`):
 
 ```sh
-gemini extensions install https://github.com/geragarazagh/text-to-speech
+gemini extensions install https://github.com/geragarazagh/offline-tts
 ```
 
-By hand, any agent that reads the Agent Skills folder (Codex, OpenCode, OpenClaw, Hermes, Grok Build) — **docs**: copy `skills/text-to-speech` to `~/.agents/skills/text-to-speech`. Claude Code reads `~/.claude/skills/text-to-speech`; Antigravity reads `~/.gemini/config/skills/text-to-speech`.
+By hand, any agent that reads the Agent Skills folder (Codex, OpenCode, OpenClaw, Hermes, Grok Build) — **docs**: copy `skills/offline-tts` to `~/.agents/skills/offline-tts`. Claude Code reads `~/.claude/skills/offline-tts`; Antigravity reads `~/.gemini/config/skills/offline-tts`.
 
 ### No skills in the agent
 
-Paste the text of [`SKILL.md`](skills/text-to-speech/SKILL.md) into the agent's instructions (`AGENTS.md`, `CLAUDE.md`, `GEMINI.md` or the agent's settings), or as the first message of a session.
+Paste the text of [`SKILL.md`](skills/offline-tts/SKILL.md) into the agent's instructions (`AGENTS.md`, `CLAUDE.md`, `GEMINI.md` or the agent's settings), or as the first message of a session.
 
 ## Use
 
-Say what to read, in any language. To call the skill by name: `/text-to-speech` in Claude Code (`/text-to-speech:text-to-speech` when installed as the plugin) and Antigravity; `$text-to-speech` in Codex.
+Say what to read, in any language. To call the skill by name: `/offline-tts` in Claude Code (`/offline-tts:offline-tts` when installed as the plugin) and Antigravity; `$offline-tts` in Codex.
 
 ```
 Read this file aloud into an mp3: ~/Documents/report.txt
@@ -68,7 +68,7 @@ Turn your last answer into audio, male voice, 1.5 times faster.
 Make an audiobook-style m4a of chapter1.txt at 0.9 speed and save it in Music.
 ```
 
-The first time in a conversation the assistant asks one short question with three defaults: the voice (two to four real voices of the text's language, by the names the computer uses; default the best female voice), the speed (default normal) and the place and format (default mp3 next to the text file, or in Downloads). «ok» takes the defaults; a request that already names them starts at once. It can keep the answers in `~/.config/text-to-speech.txt` if the person agrees.
+The first time in a conversation the assistant asks one short question with three defaults: the voice (two to four real voices of the text's language, by the names the computer uses; default the best female voice), the speed (default normal) and the place and format (default mp3 next to the text file, or in Downloads). «ok» takes the defaults; a request that already names them starts at once. It can keep the answers in `~/.config/offline-tts.txt` if the person agrees.
 
 ## What this skill does on the computer
 
@@ -77,10 +77,12 @@ The first time in a conversation the assistant asks one short question with thre
 - Works offline. Connects to the internet only to install a tool or download a Piper voice, each after the person's yes.
 - Plays nothing aloud unless asked.
 - On Windows it runs a short PowerShell script it writes to the temporary folder, with `-ExecutionPolicy Bypass` for that one run.
-- Stores nothing about the person, except `~/.config/text-to-speech.txt` with their voice, speed and folder, only if they agree.
+- Stores nothing about the person, except `~/.config/offline-tts.txt` with their voice, speed and folder, only if they agree.
 - The installers are other people's programs with their own rules: `npx skills` (Vercel) sends an anonymous install count unless `DISABLE_TELEMETRY=1` is set.
 
 ## Tested on
+
+Until 0.2.0 (2026-11-18) the skill was named `text-to-speech`, in the repository geragarazagh/text-to-speech, which GitHub now redirects here; the runs below used that name.
 
 2026-11-16, in a fresh Claude Code configuration (its own login, no user instructions, only this skill and two others of the same author (YouTube downloads, audiobooks), so that a near miss could start the wrong one): Claude Haiku 5.5 (`claude-haiku-5-5`) in Claude Code 2.1.325 on macOS 27.2 (Apple M3 Pro), `tts` from TTS 0.5, ffmpeg 9.0.2. Checked by script:
 
