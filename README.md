@@ -100,6 +100,8 @@ Until 0.2.0 (2026-11-18) the skill was named `text-to-speech`, in the repository
 - The Russian text on a Mac without `tts`: the assistant wrote the numbers, dates, money and abbreviations as words in the right case itself and made the mp3 with `say` (Katya Enhanced); read back with every sum, unit and «искусственный интеллект» in place.
 - The same Russian request without the skill: `say` with the compact Milena voice on the raw text; the hryvnia sign and «ИИ» were dropped and «ГБ» was spelled as letters.
 
+Version 0.2.0 renames the skill from `text-to-speech` to `offline-tts` and sets the catalogue icons; what the skill does is unchanged. On 2026-11-18 the installs were run again under the new name from this repository's v0.2.0 release, each into an empty home folder: `npx skills add geragarazagh/offline-tts -g` (files identical to `skills/offline-tts`), the Claude Code plugin commands above in Claude Code 2.1.326 (the plugin's skill folder identical), and `gemini extensions install` in Gemini CLI 0.68.0 (installed from the release, version 0.2.0, the skill folder identical).
+
 Not tested: other models, other agents, Windows (its commands are from Microsoft's documentation), a model following the Linux commands (they were run by hand), the installs marked **docs**.
 
 ## What it cannot do
