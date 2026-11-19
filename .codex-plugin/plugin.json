@@ -1,7 +1,7 @@
 {
   "name": "offline-tts",
-  "version": "0.2.1",
-  "description": "Reads a text aloud into an mp3, m4a or wav with the computer's own voices, offline: Siri voices on a Mac, Piper or system voices on Linux and Windows, numbers and dates read right.",
+  "version": "0.2.2",
+  "description": "Reads text aloud into an audio file with the computer's own voices, offline.",
   "author": {
     "name": "Herman Harazha",
     "url": "https://geragaraza.com"
@@ -13,7 +13,7 @@
   "interface": {
     "displayName": "Offline TTS",
     "shortDescription": "Read a text aloud into a file",
-    "longDescription": "Give the assistant a text or a file and say to read it aloud: it asks once for the voice, the speed and where to save, then makes an mp3, m4a or wav on the computer with the voices already there, offline, and checks the file. On a Mac it uses the Siri voices through the open-source tts command and reads Russian and Ukrainian numbers and dates in the right case; on Linux Piper or espeak-ng, on Windows the built-in voices, with numbers and signs written as words first. Nothing is installed without the person's yes; nothing is sent anywhere.",
+    "longDescription": "Reads text aloud into an audio file with the computer's own voices, offline.",
     "developerName": "Herman Harazha",
     "category": "Productivity",
     "capabilities": [],

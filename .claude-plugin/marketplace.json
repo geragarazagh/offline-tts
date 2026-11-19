@@ -1,6 +1,6 @@
 {
   "name": "offline-tts",
-  "description": "The offline-tts skill: a text read aloud into an audio file with the computer's own voices.",
+  "description": "Reads text aloud into an audio file with the computer's own voices, offline.",
   "owner": {
     "name": "Herman Harazha",
     "url": "https://geragaraza.com"
@@ -9,7 +9,7 @@
     {
       "name": "offline-tts",
       "source": "./",
-      "description": "Reads a text aloud into an mp3, m4a or wav with the computer's own voices, offline, and checks the file."
+      "description": "Reads text aloud into an audio file with the computer's own voices, offline."
     }
   ]
 }
